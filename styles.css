@@ -40,13 +40,12 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	h2 {font-size: 40px;
 		display: block;
-		margin-left: 6%;
-		margin-right: 6%;
+		margin: 1% 2% 2% 2%;
 		line-height: 1em;
 		font-family: 'Open Sans';
 		font-weight: 400;
-		border-left: 3px solid rgba(16, 248, 192, 0.33);
-		padding: 0 0 0 1%;
+		border-left: 6px solid rgba(16, 248, 192, 0.33);
+		padding: 4px 0 2px 9px;
 		color: #3D3D3D !important;
 	}
 	h2 a {
@@ -60,7 +59,14 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	h4 {font-size: 18px; color: #666 }
 	
-	h5 {font-size: 16px }
+	h5 {font-size: 20px;
+	font-family: 'open sans';
+	margin: 14px 0 10px 4px;
+	border-left: #27C9C2 3px solid;
+	padding-left: 7px;
+	font-weight: 600;
+	color: #575757;
+		}
 	
 	h6 {font-size: 14px; color: #000 }
 	
@@ -68,6 +74,7 @@ http://www.opensource.org/licenses/gpl-license.php
 		margin:5px 0 10px 0; 
 		font-family: 'open sans' !important;
 		font-weight: 400;
+		font-size:16px;
    	}
 	
 	strong, b, caption, th {font-weight: bold }
@@ -116,7 +123,7 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	#sidebar {
 		float: none; 
-		width: 250px; 
+		width: auto; 
 		color: #525252;
 		padding: 1px 15px 10px; 
 	}
@@ -174,7 +181,8 @@ http://www.opensource.org/licenses/gpl-license.php
 	.entry {clear: both; padding:0 12px 8px 0; margin: 0 0 0 10px }
 	
 	.post { padding: 20px; margin: 0 0 20px; clear: both; height:auto !important; height: 208px; min-height:208px;background-color:white; 
-		border:0;
+		border-bottom: 1px solid #DFDFDF;
+		box-shadow: 0px 5px 6px -7px rgba(0, 0, 0, 0.25);
 		overflow:hidden; }
 	* html body .post {background-position: 12px 15px; padding: 15px 0 12px 15px }
 	*+html body .post {background-position: 12px 15px; padding: 15px 0 12px 15px }
@@ -194,11 +202,13 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	.entry-meta {margin: 0 44px 0 0; color: #595050; font-size: 11px; background: url(images/dots.gif) repeat-x 0 top; padding: 3px 0 0 0; width: 492px; float: right }
 	
-	.comment-bubble {background-color:#21A0DE;
-color:#FFFFFF;
-font-size:12px;
-font-weight:bold;
-padding:2px 6px; }
+	.comment-bubble {
+	background-color:#21A0DE;
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+	padding:2px 6px; 
+}
 	
 	.entry_content {clear: both; margin: 0;}
 	
@@ -207,23 +217,36 @@ padding:2px 6px; }
 	* html body #search-submit {padding-top:22px}	
 	*+html body #search-stagcloudubmit {padding-top:22px}	
 	.partnerBanner {padding:10px 0 0}
-	#sidebar h2 { color: #fff; font-size: 14px; text-align: left; height: 75px; background:url(http://staging.picturemarketing.com/images/blog_headers.png) -480px top no-repeat; overflow: hidden }
+	#sidebar h2 { color: #fff; font-size: 14px; text-align: left; height: 40px; background: none; overflow: hidden ; display: block;}
 	
 	#sidebar .side-switch h2 {background-position:0 top; overflow:hidden; width:240px;}
 	
-	#sidebar ul {overflow:hidden; }
-	
-	#sidebar ul ul {padding:0 0 20px 30px; width:210px; }
+	#sidebar ul ul {padding: 0; width: 100%; }
 	
 	#sidebar li {padding: 0; list-style: none }
 		
 	#sidebar li li {margin:0 0 10px;}
 	
-	#sidebar .widget {margin: 0; width:283px }
+	#sidebar .widget {margin: 0;}
 	
 	#sidebar div.widget {margin: 0}
+
+	#sidebar > ul > li {
+		padding: 0;
+		list-style: none;
+		display: block;
+		width: 33%;
+		float: none;
+		vertical-align: top;}
 			
 	#sidebar ul ul ul { padding: 2px 0 8px }
+
+	#sidebar {
+		float: none;
+		width: auto;
+		color: #525252;
+		padding: 1px 15px 10px;
+	}
 	
 	.sidebar-divider {background: url(images/sidebar-divider.gif) repeat-x 0 top; height:1px; line-height:1px; margin: 0 0 5px; width: 292px }
 	
@@ -285,9 +308,9 @@ padding:2px 6px; }
 	
 	#sidebar li#promo {margin:0 0 0 20px }
 	
-	#commentform lable {font-size:120% }
+	#commentform label {font-size:120% }
 	
-	.editpost {background:url(images/icon-edit.gif) no-repeat; padding:0 0 2px 18px }
+	.editpost {background:url(images/icon-edit.gif) no-repeat; padding:0 0 2px 18px; display: none; }
 	.tag-icon, .post .tags {background:url(images/icon-tag.gif) no-repeat left center; padding:0 0 2px 16px; margin: 40px 0; }
 	.post .tags.allarticles {border:#000 dotted; border-width:1px 0 0; margin:20px 0 0; padding:10px 0 10px 20px;}
 	.comment-icon {background:url(images/icon-comment.gif) no-repeat; padding:0 0 0 18px }
@@ -305,6 +328,7 @@ padding:2px 6px; }
 	font-size:11px;
 	margin:0;
 	padding:5px 0;
+	display: none;
 	}
 	.postedinfo span {
 	margin-right: 12px;
@@ -380,15 +404,15 @@ padding:2px 6px; }
 	
 	#sidebar ul li a.sidebartitle:link, #sidebar ul li a.sidebartitle:visited  { color:white;
 display:block;
-font-size:16px;
-font-weight:bold;
-outline-color:-moz-use-text-color;
-outline-style:none;
-outline-width:medium;
-padding:20px 0 22px 30px;
-text-decoration:none;  }
+ font-size: 23px;
+ font-weight: 300;
+
+
+
+ padding: 11px 0 22px 2px;
+text-decoration:none; }
 	
-	#footer a:link, #footer a:visited {color: #fff; text-decoration: none; font-size: 11px; font-weight: normal }
+	#footer a:link, #footer a:visited {color: #fff; text-decoration: none; font-size: 11px; font-weignht: normal }
 	
 	#footer a:active, #footer a:hover {color: #a1d8ff; text-decoration: underline }
 	
@@ -409,6 +433,10 @@ text-decoration:none;  }
 	
 	.categories a:link, .categories a:hover, .categories a:visited {background: #21a0de; padding: 2px 7px; color: #fff; text-decoration: none; white-space:nowrap }
 	
+	div.categories {
+		display: none;
+	}
+
 	div.categories a {
     border-radius: 10px;
     text-transform: lowercase;

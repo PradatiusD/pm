@@ -2,5 +2,10 @@ Plugin changes:
 -None as of yet
 
 
-Need to add
---Discuss
+Need to add:
+--Disqus
+--Fancybox
+
+Deactivated:
+--Share This
+--Custom Author Byline

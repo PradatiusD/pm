@@ -28,4 +28,9 @@
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('240x130 Side Banner Space') ) : ?>
                 <?php endif; ?>
 			</ul>
+      <script>
+        jQuery(document).ready(function($){
+            $(".sidebartitle").trigger("click");
+        })
+      </script>
 		</div><!-- end sidebar -->
