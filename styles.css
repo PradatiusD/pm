@@ -20,9 +20,41 @@ http://www.opensource.org/licenses/gpl-license.php
 
 	body {font: 11px Arial, Helvetica, sans-serif; color: #3d3d3d}
 	
-	h1 {font-size:24px; color: #174986 }
+	h1 {font-size: 40px;
+		display: block;
+		margin-left: 6%;
+		margin-right: 6%;
+		line-height: 1em;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		border-left: 3px solid rgba(16, 248, 192, 0.33);
+		padding: 0 0 0 1%;
+		color: #3D3D3D !important;
+	}
+	h1 a {
+		color: #3D3D3D !important;
+	}
+	h1 a:hover {
+		text-decoration:none;
+	}
 	
-	h2 {font-size: 20px; color: #087db6; padding: 0 }
+	h2 {font-size: 40px;
+		display: block;
+		margin-left: 6%;
+		margin-right: 6%;
+		line-height: 1em;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		border-left: 3px solid rgba(16, 248, 192, 0.33);
+		padding: 0 0 0 1%;
+		color: #3D3D3D !important;
+	}
+	h2 a {
+		color: #3D3D3D !important;
+	}
+	h2 a:hover {
+		text-decoration:none;
+	}
 	
 	h3 {font-size: 18px; color: #055891 }
 	
@@ -32,7 +64,11 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	h6 {font-size: 14px; color: #000 }
 	
-	p {margin:5px 0 10px 0; line-height: 175% }
+	p { 
+		margin:5px 0 10px 0; 
+		font-family: 'open sans' !important;
+		font-weight: 400;
+   	}
 	
 	strong, b, caption, th {font-weight: bold }
 		
@@ -43,7 +79,6 @@ http://www.opensource.org/licenses/gpl-license.php
 	dd {margin-left:15px }
 		
 	a:link {color: #097ab1; font-weight: normal; text-decoration: none }
-	a:visited {color: #086796;}
 	a:hover, a:active {color: #0b9be3; text-decoration: underline }
 /* ***END GLOBAL*** */
 
@@ -72,9 +107,19 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	.page .search_form, .post .search_form {float: none }
 	
-	#left-col {width: 645px; float: left; padding:0 10px 0 25px; overflow:hidden float:left; }
+	#left-col {
+		float:none; 
+		width: 93%;
+		float: none;
+		padding-left: 4%;
+	}
 	
-	#sidebar {float: right; width: 250px; color: #525252; padding: 1px 15px 10px; }
+	#sidebar {
+		float: none; 
+		width: 250px; 
+		color: #525252;
+		padding: 1px 15px 10px; 
+	}
 	
 	* html body #sidebar {margin-top:-1px }
 		
@@ -128,14 +173,15 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	.entry {clear: both; padding:0 12px 8px 0; margin: 0 0 0 10px }
 	
-	.post { padding: 20px; margin: 0 0 20px; clear: both; height:auto !important; height: 208px; min-height:208px;background-color:white; border:1px solid #CFCFCF; overflow:hidden; }
+	.post { padding: 20px; margin: 0 0 20px; clear: both; height:auto !important; height: 208px; min-height:208px;background-color:white; 
+		border:0;
+		overflow:hidden; }
 	* html body .post {background-position: 12px 15px; padding: 15px 0 12px 15px }
 	*+html body .post {background-position: 12px 15px; padding: 15px 0 12px 15px }
 	
     .entry_header {margin: 0; position: relative; }
 	
-	.entry_header h1, .entry_header h2.home {margin: 6px 0 0 0; padding: 5px 0; 
-		line-height: 1.6em; font-size: 18px; height:auto !important; height:40px; min-height:40px }
+
 
 	.entry-date {
 	color:#999999;
@@ -325,9 +371,7 @@ padding:2px 6px; }
 	#logo a:link, #logo a:visited, #logo a:hover, #logo a:active {font-size: 18px; text-decoration: none; font-weight:normal; color:#def0fc; /*text-shadow:0 1px 4px #000 0 1px 4px #000*/ }
 	
 	#logo a span {font-weight:bold; font-size:26px; color:#fff }
-	
-	.entry_header h1 a:link, .entry_header h1 a:visited, .entry_header h2.home a:link, .entry_header h2.home a:visited {font-size:24px; font-weight:bold; color: #000; text-decoration: none; outline: none }
-	
+		
 	.post-edit-link a:link, .post-edit-link a:visited {font-size:12px; font-weight:normal }
 	
 	#sidebar ul li a:link, #sidebar ul li a:visited  { color: #222; text-decoration: none; font-weight: normal  }
@@ -365,6 +409,11 @@ text-decoration:none;  }
 	
 	.categories a:link, .categories a:hover, .categories a:visited {background: #21a0de; padding: 2px 7px; color: #fff; text-decoration: none; white-space:nowrap }
 	
+	div.categories a {
+    border-radius: 10px;
+    text-transform: lowercase;
+	}
+
 	.comment-bubble a:link, .comment-bubble a:visited {font-weight: normal; color: #fff; text-decoration: none }
 	
 	.page-content h3 a:link, .page-content h3 a:visited, .page-content h3 a:hover {text-decoration: none }
