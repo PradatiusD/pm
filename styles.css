@@ -39,22 +39,28 @@ http://www.opensource.org/licenses/gpl-license.php
 		text-decoration:none;
 	}
 	
-	h2 {font-size: 40px;
-		display: block;
-		margin: 1% 2% 2% 2%;
-		line-height: 1em;
-		font-family: 'Open Sans';
-		font-weight: 400;
-		border-left: 6px solid rgba(16, 248, 192, 0.33);
-		padding: 4px 0 2px 9px;
-		color: #3D3D3D !important;
-		margin-bottom: 16px;
+	h2 {
+	font-size: 27px;
+	display: block;
+	line-height: 1.2em;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	border-left: 6px solid rgba(16, 248, 192, 0.33);
+	padding: 4px 0 2px 9px;
+	color: #3D3D3D;
+	margin: 1% 2% 2% 2%;
+	position: relative;
+	right: 33px;
+	margin-bottom: 11px;
 	}
 	h2 a {
-		color: #3D3D3D !important;
+		-webkit-transition: .3s;
+		transition: .3s;
+		color: rgb(41, 41, 41);
 	}
 	h2 a:hover {
 		text-decoration:none;
+		color: #10A1C5;
 	}
 	
 	h3 {font-size: 18px; color: #055891 }
@@ -87,8 +93,9 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	dd {margin-left:15px }
 		
-	a:link {color: #097ab1; font-weight: normal; text-decoration: none }
+	a:link { font-weight: normal; text-decoration: none }
 	a:hover, a:active {color: #0b9be3; text-decoration: underline }
+	a {color: rgb(3, 150, 150);}
 /* ***END GLOBAL*** */
 
 
@@ -182,10 +189,15 @@ http://www.opensource.org/licenses/gpl-license.php
 	
 	.entry {clear: both; padding:0 12px 8px 0; margin: 0 0 0 10px }
 	
-	.post { padding: 20px; margin: 0 0 20px; clear: both; height:auto !important; height: 208px; min-height:208px;background-color:white; 
-		border-bottom: 1px solid #DFDFDF;
-		box-shadow: 0px 5px 6px -7px rgba(0, 0, 0, 0.25);
-		overflow:hidden; }
+	.post { 
+	margin: 0 0 20px;
+	clear: both;
+	height: auto !important;
+	border-bottom: 1px solid #DFDFDF;
+	box-shadow: 0px 5px 6px -7px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	padding: 20px;
+}
 	* html body .post {background-position: 12px 15px; padding: 15px 0 12px 15px }
 	*+html body .post {background-position: 12px 15px; padding: 15px 0 12px 15px }
 	
@@ -317,7 +329,22 @@ http://www.opensource.org/licenses/gpl-license.php
 	.post .tags.allarticles {border:#000 dotted; border-width:1px 0 0; margin:20px 0 0; padding:10px 0 10px 20px;}
 	.comment-icon {background:url(images/icon-comment.gif) no-repeat; padding:0 0 0 18px }
 	.usr-meta {background:url(images/icon-author.gif) no-repeat; padding:0 0 1px 18px}
-	.readmore-icon, .navigation .alignright a {background:url(images/icon-doublearrow.gif) no-repeat right 0; padding:0 18px 1px 0}
+	.readmore-icon {
+		background: #3699A2;
+		padding: .5em 1em;
+		font-size: 14px;
+		display: inline-block;
+		float: right;
+		border-radius: 5px;
+		box-shadow: 0px 1px 0px #1C5970;
+		color: #FFF;
+		-webkit-transition:.3s;
+		transition:.3s;
+	}
+	.readmore-icon:hover {
+    background: #135B5E;
+    box-shadow: 0px 10px 11px -11px gray;
+}
 	.navigation .alignleft a {background:url(images/icon-doublearrow-left.gif) no-repeat left 0; padding:0 0 1px 18px}
 	.comment-reply-link {background:url(images/icon-reply.gif) no-repeat; padding:0 0 2px 18px }
 	.comment-reply-login {background:url(images/icon-key.gif) no-repeat; padding:0 0 2px 18px }
@@ -400,11 +427,11 @@ http://www.opensource.org/licenses/gpl-license.php
 		
 	.post-edit-link a:link, .post-edit-link a:visited {font-size:12px; font-weight:normal }
 	
-	#sidebar ul li a:link, #sidebar ul li a:visited  { color: #222; text-decoration: none; font-weight: normal  }
+	#sidebar ul li a:link, #sidebar ul li a:visited  { color: rgb(65, 65, 65);text-decoration: none; font-weight: normal  }
 	
 	#sidebar ul li a:hover { text-decoration: underline }
 	
-	#sidebar ul li a.sidebartitle:link, #sidebar ul li a.sidebartitle:visited  { color:white;
+	#sidebar ul li a.sidebartitle:link, #sidebar ul li a.sidebartitle:visited  { color:rgb(80, 80, 80);
 display:block;
  font-size: 23px;
  font-weight: 300;
@@ -878,7 +905,6 @@ font-size: 10px;
 .stButton .email { background-position:0 -461px !important; *background-position:0 -460px !important; *border-bottom:1px solid #BFBFBF;}
 .stButton .stButton_gradient { padding:0 2px 1px !important; *padding:0 2px 3px !important;  }
 */
-
 
 
 

@@ -31,6 +31,7 @@
       <script>
         jQuery(document).ready(function($){
             $(".sidebartitle").trigger("click");
+            $('.readmore-icon').html('Read more');
         })
       </script>
 		</div><!-- end sidebar -->
